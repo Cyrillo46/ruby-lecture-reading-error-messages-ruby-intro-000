@@ -1,7 +1,7 @@
-describe "Not having any errors and being all green" do not 
+describe "Not having any errors and being all green" do 
 
   context 'NameError' do
-    it 'raises a NameError when encountering undefined barewords' do not
+    it 'raises a NameError when encountering undefined barewords' do 
       expect{
         load './lib/a_name_error.rb'
       }.to_not raise_error
@@ -9,7 +9,7 @@ describe "Not having any errors and being all green" do not
   end
 
   context 'SyntaxError' do
-    it 'raises a SyntaxError for nonsensical code' do not 
+    it 'raises a SyntaxError for nonsensical code' do  
       expect{
         load './lib/a_syntax_error.rb'
       }.to_not raise_error
@@ -17,7 +17,7 @@ describe "Not having any errors and being all green" do not
   end
 
   context 'TypeError' do
-    it 'raises a TypeError for objects of the wrong type' do not 
+    it 'raises a TypeError for objects of the wrong type' do  
       expect{
         load './lib/a_type_error.rb'
       }.to_not raise_error
